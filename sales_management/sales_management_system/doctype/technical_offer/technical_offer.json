@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 16:22:15.563520",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "customer_name",
+  "date",
+  "subject",
+  "column_break_ymhq8",
+  "document_name",
+  "our_ref",
+  "ref_number",
+  "section_break_1vr1c",
+  "rev_table",
+  "section_break_da3js",
+  "scope_of_supply",
+  "section_break_7l0th",
+  "terms_and_conditions",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "column_break_ymhq8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Link",
+   "label": "Document Name",
+   "options": "Technical Offer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "our_ref",
+   "fieldtype": "Data",
+   "label": "Our Ref"
+  },
+  {
+   "fieldname": "ref_number",
+   "fieldtype": "Data",
+   "label": "Ref Number"
+  },
+  {
+   "fieldname": "section_break_1vr1c",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rev_table",
+   "fieldtype": "Table",
+   "label": "Rev Table",
+   "options": "Rev Table"
+  },
+  {
+   "fieldname": "section_break_da3js",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "scope_of_supply",
+   "fieldtype": "Text",
+   "label": "Scope of Supply"
+  },
+  {
+   "fieldname": "section_break_7l0th",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Table",
+   "label": "Terms and Conditions",
+   "options": "Term and Conditions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Technical Offer",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-03 16:28:54.469664",
+ "modified_by": "Administrator",
+ "module": "Sales Management System",
+ "name": "Technical Offer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

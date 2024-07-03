@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-03 15:43:19.120186",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_name",
+  "version_number",
+  "send_date",
+  "approved_date",
+  "attached"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document Name"
+  },
+  {
+   "fieldname": "version_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Version Number"
+  },
+  {
+   "fieldname": "send_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Send Date"
+  },
+  {
+   "fieldname": "approved_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Approved Date"
+  },
+  {
+   "fieldname": "attached",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attached"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-03 15:43:19.120186",
+ "modified_by": "Administrator",
+ "module": "Sales Management System",
+ "name": "Log Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
