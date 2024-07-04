@@ -8,23 +8,18 @@ frappe.ui.form.on('Tenders', {
 		if(doc_status == 'Approved'){
 			frm.add_custom_button(__("Log"),
 				function() {
-					create_log();
+					make_log(frm);
 				},
 				__("Create")
 			);
 		}
 		
 	},
-	doc_status: function(frm){
-		let doc_status = frm.doc.doc_status ;
-		if (doc_status == 'Rejected'){
-			frm.set_df_property('doc_reason', 'reqd', 1);
-		}else{
-			frm.set_df_property('doc_reason', 'reqd', 0);
-		}
-	}
 });
 
-function create_log(){
-	msgprint("hi");
+function make_log(frm){
+	frappe.model.open_mapped_doc({
+		method: "sales_management.sales_management_system.doctype.tenders.tenders.make_log",
+		frm: frm
+	})
 }

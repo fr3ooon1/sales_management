@@ -7,7 +7,7 @@ frappe.ui.form.on('Log', {
 		if(status == 1){
 			frm.add_custom_button(__("Technical Offer"),
 				function() {
-					create_offer();
+					create_offer(frm);
 				},
 				__("Create")
 			);
@@ -16,6 +16,9 @@ frappe.ui.form.on('Log', {
 	},
 });
 
-function create_offer(){
-	msgprint("hi");
+function create_offer(frm){
+	frappe.model.open_mapped_doc({
+		method: "sales_management.sales_management_system.doctype.log.log.create_offer",
+		frm: frm
+	})
 }

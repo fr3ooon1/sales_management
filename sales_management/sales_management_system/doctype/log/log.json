@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "customer",
+  "customer_name",
   "lead",
   "tender",
   "document_name",
@@ -51,12 +52,18 @@
    "options": "Log",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-07-03 15:46:20.071400",
+ "modified": "2024-07-04 10:37:17.341480",
  "modified_by": "Administrator",
  "module": "Sales Management System",
  "name": "Log",
